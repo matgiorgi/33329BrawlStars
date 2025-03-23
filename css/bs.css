@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,7 +12,7 @@ body {
     color: white;
 }
 
-/* Cabeçalho */
+
 header {
     background: #ff6f00;
     padding: 20px;
@@ -39,7 +39,7 @@ header nav ul li a {
     font-size: 1.1em;
 }
 
-/* Seções */
+
 section {
     padding: 20px;
 }
@@ -62,7 +62,7 @@ button:hover {
     background-color: #ff4500;
 }
 
-/* Cards de Brawlers */
+
 .brawler-card {
     background-color: #333;
     padding: 20px;
@@ -87,7 +87,7 @@ button:hover {
     font-size: 1.1em;
 }
 
-/* Footer */
+
 footer {
     background-color: #111;
     text-align: center;
