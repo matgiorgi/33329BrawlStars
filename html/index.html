@@ -1,56 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Brawl Stars</title>
+    <title>Brawl Stars - O Mundo dos Brawlers</title>
     <link rel="stylesheet" href="bs.css">
 </head>
 <body>
-
+    <!-- Cabeçalho -->
     <header>
-        <h1>Brawl Stars</h1>
+        <div class="logo">
+            <img src="brawl-stars-logo.png" alt="Brawl Stars">
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Brawlers</a></li>
-                <li><a href="#">Notícias</a></li>
+                <li><a href="#brawlers">Brawlers</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#sobre">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Bem-vindo ao Brawl Stars!</h2>
-        <p>Junte-se à diversão e lute contra outros jogadores em batalhas emocionantes!</p>
-        <button id="more-info-btn">Saiba Mais</button>
-    </section>
-
-    <section id="about">
-        <h2>Sobre o Jogo</h2>
-        <p>Brawl Stars é um jogo mobile de batalha multiplayer onde os jogadores lutam em diferentes modos de jogo com vários brawlers com habilidades únicas.</p>
-    </section>
-
+    <!-- Seção de Brawlers -->
     <section id="brawlers">
         <h2>Brawlers</h2>
-        <div class="brawler-card" id="brawler1">
-            <h3>Shelly</h3>
-            <p>Especialidade: Atiradora</p>
+        <div class="card-container">
+            <!-- Exemplo de Card de Brawler -->
+            <div class="card">
+                <img src="brawler-1.png" alt="Brawler 1">
+                <h3>Spike</h3>
+                <p>Raridade: Lendário</p>
+                <button onclick="exibirDetalhes('Spike')">Ver Detalhes</button>
+            </div>
+            <div class="card">
+                <img src="brawler-2.png" alt="Brawler 2">
+                <h3>Colt</h3>
+                <p>Raridade: Comum</p>
+                <button onclick="exibirDetalhes('Colt')">Ver Detalhes</button>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
         </div>
-        <div class="brawler-card" id="brawler2">
-            <h3>Colt</h3>
-            <p>Especialidade: Pistoleiro</p>
-        </div>
-        <!-- Adicione mais cards de brawlers conforme necessário -->
     </section>
 
+    <!-- Seção de Notícias -->
+    <section id="noticias">
+        <h2>Últimas Notícias</h2>
+        <div class="noticia">
+            <h3>Atualização 40 - Novos Brawlers e Mapas</h3>
+            <p>Confira as novidades da atualização mais recente!</p>
+            <a href="#">Leia mais...</a>
+        </div>
+        <!-- Adicione mais notícias conforme necessário -->
+    </section>
+
+    <!-- Seção sobre o jogo -->
+    <section id="sobre">
+        <h2>Sobre o Brawl Stars</h2>
+        <p>Brawl Stars é um jogo de batalha online com diferentes modos e uma variedade de brawlers. Lute com seus amigos ou contra jogadores do mundo inteiro!</p>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Brawl Stars - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Brawl Stars Fan Site | <a href="#">Privacidade</a> | <a href="#">Termos de Uso</a></p>
     </footer>
 
-    <script src="bs.js">
-
-    </script>
+    <script src="bs.js"></script>
 </body>
 </html>
