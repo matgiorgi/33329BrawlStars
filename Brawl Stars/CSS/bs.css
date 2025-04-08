@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Bangers', cursive;
+    background: linear-gradient(to right, #1c1c1c, #3a3a3a);
+    color: white;
+  }
+  
+  header {
+    background-color: #ffcc00;
+    color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #292929;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: url('https://cdn.supercell.com/supercell.com/200708152732/supercell.com/files/styles/sc_home_hero/public/BS_Home_hero.png') no-repeat center center/cover;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .hero h1 {
+    font-size: 5rem;
+  }
+  
+  .content {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .character-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .card h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    font-size: 1rem;
+    border-top: 2px solid #ffcc00;
+  }
+  
