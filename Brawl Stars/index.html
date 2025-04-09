@@ -1,29 +1,195 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brawl Stars Universe</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars Universe - O Melhor Site sobre Brawl Stars</title>
+    <link rel="stylesheet" href="./CSS/bs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="./JS/bs.js"></script>
 </head>
+
 <body>
-  <header>Brawl Stars Universe</header>
-  <nav>
-    <a href="#">Início</a>
-    <a href="#personagens">Personagens</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-  <section class="hero">
-    <h1>Explore o Mundo de Brawl Stars</h1>
-  </section>
-  <section class="content" id="personagens">
-    <h2>Personagens Populares</h2>
-    <div class="character-card" id="cards-container"></div>
-  </section>
-  <footer>
-    &copy; 2025 Brawl Stars Fanpage. Todos os direitos reservados.
-  </footer>
-  <script src="script.js"></script>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./IMG/logo.png" alt="Brawl Stars Logo">
+                <span>Brawl Stars Universe</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#brawlers">Brawlers</a></li>
+                    <li><a href="#modes">Modo de Jogo</a></li>
+                    <li><a href="#maps">Mapa</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Explore o Universo de Brawl Stars</h1>
+            <p>Tudo sobre seus brawlers favoritos, estratégias, mapas e muito mais!</p>
+            <a href="#brawlers" class="btn">Começar</a>
+        </div>
+    </section>
+
+<!-- Seção Brawlers - Com imagens adicionadas manualmente -->
+<section class="brawlers-section" id="brawlers">
+  <div class="container">
+      <h2 class="section-title">Brawlers</h2>
+      <div class="brawlers-grid">
+          <!-- Shelly -->
+          <div class="brawler-card">
+              <div class="brawler-img-container">
+                  <img src="./IMG/shelly.png" alt="Shelly" class="brawler-image">
+              </div>
+              <div class="brawler-info">
+                  <h3>Shelly</h3>
+                  <p>Shelly atira uma rajada de balas que causam mais dano a curta distância.</p>
+                  <div class="brawler-meta">
+                      <span class="brawler-rarity comum">Comum</span>
+                      <span class="brawler-type">Dano</span>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Colt -->
+          <div class="brawler-card">
+              <div class="brawler-img-container colt-container">
+                  <img src="./IMG/colt.jpg" alt="Colt" class="brawler-image colt-image">
+              </div>
+              <div class="brawler-info">
+                  <h3>Colt</h3>
+                  <p>Colt dispara seis tiros rápidos em linha reta, perfeito para acertar alvos à distância.</p>
+                  <div class="brawler-meta">
+                      <span class="brawler-rarity comum">Comum</span>
+                      <span class="brawler-type">Dano</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Seção Modos de Jogo -->
+<section class="modes-section" id="modes">
+  <div class="container">
+      <h2 class="section-title">Modos de Jogo</h2>
+      <div class="modes-grid">
+          <!-- Gem Grab -->
+          <div class="mode-card">
+              <div class="mode-img-container">
+                  <img src="./IMG/gem grab.jpeg" alt="Gem Grab" class="mode-image">
+              </div>
+              <div class="mode-info">
+                  <h3>Gem Grab</h3>
+                  <p>Colete gemas e mantenha o controle para vencer. O primeiro time a coletar 10 gemas ganha!</p>
+                  <div class="mode-meta">
+                      <span class="mode-type">3vs3</span>
+                      <span class="mode-duration">⏱ 2:30 min</span>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Brawl Ball -->
+          <div class="mode-card">
+              <div class="mode-img-container brawl-ball-container">
+                  <img src="./IMG/brawl ball.png" alt="Brawl Ball" class="mode-image brawl-ball-image">
+              </div>
+              <div class="mode-info">
+                  <h3>Brawl Ball</h3>
+                  <p>Marque dois gols antes do time adversário. Chute a bola para a vitória!</p>
+                  <div class="mode-meta">
+                      <span class="mode-type">3vs3</span>
+                      <span class="mode-duration">⏱ 2:30 min</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Seção Mapas -->
+<section class="maps-section" id="maps">
+  <div class="container">
+      <h2 class="section-title">Mapas</h2>
+      <div class="maps-grid">
+          <!-- Caverna Cristalina -->
+          <div class="map-card">
+              <div class="map-img-container">
+                  <img src="./IMG/hrm mapa.jpeg" alt="Caverna Cristalina" class="map-image">
+                  <div class="map-mode-badge">Gem Grab</div>
+              </div>
+              <div class="map-info">
+                  <h3>Caverna Cristalina</h3>
+                  <div class="map-meta">
+                      <span class="map-difficulty easy">Fácil</span>
+                      <span class="map-size">Médio</span>
+                  </div>
+                  <p>Mapa com muitos obstáculos e paredes quebradiças. Ideal para Brawlers de curto alcance.</p>
+              </div>
+          </div>
+          
+          <!-- Campo de Futebol -->
+          <div class="map-card football-field-card">
+              <div class="map-img-container football-field-container">
+                  <img src="./IMG/dt.jpeg" alt="Campo de Futebol" class="map-image football-field-image">
+                  <div class="map-mode-badge">Brawl Ball</div>
+              </div>
+              <div class="map-info">
+                  <h3>Campo de Futebol</h3>
+                  <div class="map-meta">
+                      <span class="map-difficulty medium">Médio</span>
+                      <span class="map-size">Grande</span>
+                  </div>
+                  <p>Área aberta com poucos obstáculos. Brawlers de longo alcance se destacam aqui.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Brawl Stars Universe">
+                </div>
+                <div class="footer-links">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Brawl Stars Universe. Não afiliado à Supercell.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
